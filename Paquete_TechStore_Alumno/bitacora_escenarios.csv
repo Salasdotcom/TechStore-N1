@@ -1,0 +1,16 @@
+﻿caso,estado_inicial,operacion,resultado_real,explicacion,eventos
+E01,DRAFT,Calcular descuento de O001,Descuento del 10%; total final $1890 MXN,Cumple las condiciones para el descuento del 10%.,Ninguno
+E02,DRAFT,Calcular descuento de O002,Sin descuento; total final $1050 MXN,No cumple las condiciones de descuento.,Ninguno
+E03,DRAFT,Confirmar O003,Operación rechazada,El cliente está inactivo.,Ninguno
+E04,DRAFT,Calcular descuento de O005,Sin descuento,La promoción activa impide aplicar el descuento.,Ninguno
+E05,DRAFT,Calcular descuento de O006,Descuento del 5%; total final $17100 MXN,El pedido cumple la regla del 5%.,Ninguno
+E06,DRAFT,Confirmar O007,Operación rechazada,No se permite confirmar un pedido vacío.,Ninguno
+E07,DRAFT,Confirmar O008 con 20 unidades,Confirmación exitosa,El límite de 20 unidades está permitido.,OrderConfirmed
+E08,DRAFT,"Agregar 2 unidades a O009, que ya tiene 19",Operación rechazada; conserva 19 unidades,La operación excedería el límite de 20 unidades.,Ninguno
+E09,DRAFT,Calcular descuento de O010,Sin descuento; total $500 MXN,El total debe ser mayor que $500 para cumplir la regla.,Ninguno
+E10,DRAFT,Calcular descuento de O011,Sin descuento,El pedido tiene solo 3 unidades.,Ninguno
+E11,DRAFT,Enviar O012 sin guía,Envío rechazado; estado CONFIRMED,Se requiere una guía de seguimiento para enviar.,OrderConfirmed
+E12,DRAFT,Confirmar O013 dos veces,La segunda confirmación fue rechazada,No se permite confirmar un pedido ya confirmado.,OrderConfirmed
+E13,DRAFT,"Confirmar, enviar y cancelar O014",Cancelación rechazada; estado SHIPPED,No se permite cancelar un pedido ya enviado.,"OrderConfirmed, OrderShipped"
+E14,DRAFT,"Confirmar, enviar y devolver O015",Devolución exitosa; estado RETURNED,La devolución es válida después del envío.,"OrderConfirmed, OrderShipped, OrderReturned"
+E15,DRAFT,"Confirmar, enviar y entregar O016",Entrega exitosa; estado DELIVERED,La transición a entregado se completó correctamente.,"OrderConfirmed, OrderShipped, OrderDelivered"
