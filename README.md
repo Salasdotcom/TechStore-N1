@@ -1,4 +1,4 @@
-# TechStore
+# TechStore - ACTIVIDAD 4 - Implementación del núcleo de negocio TechStore 
 Integrantes
 
 | Alumno      | Matricula        | 
