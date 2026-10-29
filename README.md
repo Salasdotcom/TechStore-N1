@@ -1,4 +1,14 @@
 # TechStore
+Integrantes
+
+| Alumno      | Matricula        | 
+| ------------- |:-------------:| 
+| Emiliano Salas Padron     | 2157333 | 
+| Jesus Adrian De la Cruz Dominguez    | 2156493  | 
+| Joel Guadalupe Taméz Olmos | 2158224      | 
+
+Profesor: Miguel Ángel Gómez Marroquín
+
 
 API REST para gestionar pedidos de una tienda tecnológica. El proyecto implementa reglas de negocio para calcular descuentos, controlar las transiciones de estado de los pedidos y registrar eventos de dominio.
 
